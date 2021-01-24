@@ -28,6 +28,7 @@ foreach ($client->parseEvents() as $event) {
             $message = $event['message'];
             switch ($message['type']) {
                 case 'text':
+			//$message['text']の中身がどのメッセージ内容かを判別
 			if ($message['text'] === 'つらい') {
                     		$client->replyMessage([
                         	'replyToken' => $event['replyToken'],
