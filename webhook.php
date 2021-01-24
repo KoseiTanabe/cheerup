@@ -52,7 +52,7 @@ foreach ($client->parseEvents() as $event) {
                     		]);
 			}
 
-			if ($message['text'] === '自分にはできっこない') {
+			if ($message['text'] === '自分には出来っこない') {
                     		$client->replyMessage([
                         	'replyToken' => $event['replyToken'],
                         		'messages' => [
